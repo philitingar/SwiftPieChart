@@ -21,7 +21,7 @@ PieChartView(
 
 ## Installation
 
-In Xcode go to `File -> Swift Packages -> Add Package Dependency` and paste in the repo's url: `https://github.com/ilamanov/SwiftPieChart`
+In Xcode go to `File -> Swift Packages -> Add Package Dependency` and paste in the repo's url: `https://github.com/philitingar/SwiftPieChart.git`
 
 ## Demo
 
