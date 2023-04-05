@@ -46,9 +46,6 @@ public struct PieChartView: View {
     }
     
     public var body: some View {
-        ZStack{
-            Color.blue
-                .ignoresSafeArea()
             GeometryReader { geometry in
                 VStack{
                     ZStack{
@@ -104,7 +101,7 @@ public struct PieChartView: View {
                 .foregroundColor(Color.white.opacity(0.0))
                 
             }
-        }
+        
     }
 }
 
@@ -143,6 +140,5 @@ struct PieChartView_Previews: PreviewProvider {
         PieChartView(values: [1300, 500, 300], names: ["Rent", "Transport", "Education"], formatter: {value in String(format: "$%.2f", value)})
     }
 }
-
 
 
