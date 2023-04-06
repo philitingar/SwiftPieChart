@@ -28,14 +28,16 @@ struct PieSlice: View {
                 }
                 .stroke(style:StrokeStyle(lineWidth: 60, lineCap: .round, lineJoin: .round))
                 .fill(pieSliceData.color)
-                
-                
+               
                 Text(pieSliceData.text)
                     .position(
-                        x: geometry.size.width * 0.5 * CGFloat(1.0 + 0.78 * cos(self.midRadians)),
-                        y: geometry.size.height * 0.5 * CGFloat(1.0 - 0.78 * sin(self.midRadians))
+                        x: geometry.size.width * 0.5 * CGFloat(1.0 + 1.0 * cos(self.midRadians)),
+                        y: geometry.size.height * 0.5 * CGFloat(1.0 - 1.0 * sin(self.midRadians))
                     )
+                    .font(.title)
                     .foregroundColor(Color.white)
+                    .bold()
+                    
             }
         }
         .aspectRatio(1, contentMode: .fit)
@@ -56,4 +58,3 @@ struct PieSlice_Previews: PreviewProvider {
         PieSlice(pieSliceData: PieSliceData(startAngle: Angle(degrees: 0.5), endAngle: Angle(degrees: 120.0), text: "30%", color: Color.black))
     }
 }
-
