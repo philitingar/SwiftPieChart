@@ -36,7 +36,7 @@ struct PieSlice: View {
                     )
                     .font(.title)
                     .foregroundColor(Color.white)
-                    .bold()
+                    
                     
             }
         }
