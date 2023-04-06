@@ -137,6 +137,7 @@ struct PieChartRows: View {
             }.padding()
                 .background(Color(red: 175/255, green: 101/255, blue: 181/255).opacity( 0.8))
                 .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                .padding(.horizontal, 5)
                 
         }
     }
